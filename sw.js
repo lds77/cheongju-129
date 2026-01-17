@@ -1,8 +1,8 @@
 const CACHE_NAME = 'jikji-transport-v1';
 const urlsToCache = [
-  '/app.html',
-  '/manifest.json',
-  '/index.html'
+  './app.html',
+  './manifest.json',
+  './index.html'
 ];
 
 // 설치 이벤트
@@ -66,7 +66,7 @@ self.addEventListener('fetch', event => {
           }
         ).catch(() => {
           // 오프라인이고 캐시도 없으면 기본 페이지 반환
-          return caches.match('/app.html');
+          return caches.match('./app.html');
         });
       })
   );
