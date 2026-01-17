@@ -1,4 +1,4 @@
-const CACHE_NAME = 'jikji-transport-v1';
+const CACHE_NAME = 'jikji-transport-v2';
 const urlsToCache = [
   './app.html',
   './manifest.json',
